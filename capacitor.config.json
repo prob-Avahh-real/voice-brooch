@@ -1,0 +1,27 @@
+{
+  "appId": "com.skat.voicebrooch",
+  "appName": "变声胸针",
+  "webDir": "dist",
+  "bundledWebRuntime": false,
+  "server": {
+    "androidScheme": "https",
+    "cleartext": true
+  },
+  "ios": {
+    "contentInset": "automatic",
+    "allowsLinkPreview": false
+  },
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 1500,
+      "launchAutoHide": true,
+      "backgroundColor": "#1a1028",
+      "showSpinner": false
+    },
+    "StatusBar": {
+      "style": "DARK",
+      "backgroundColor": "#1a1028",
+      "overlaysWebView": false
+    }
+  }
+}

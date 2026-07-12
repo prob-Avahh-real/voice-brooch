@@ -1,0 +1,31 @@
+{
+  "name": "voice-brooch",
+  "version": "1.0.0",
+  "description": "变声胸针 — 实时变声 · 移动端 + 智能硬件",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "sync:ios": "npx cap sync ios",
+    "sync:android": "npx cap sync android",
+    "open:ios": "npx cap open ios",
+    "open:android": "npx cap open android",
+    "mobile:build": "npm run build && npx cap sync",
+    "mobile:ios": "npm run build && npx cap sync ios && npx cap open ios",
+    "mobile:android": "npm run build && npx cap sync android && npx cap open android"
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.3.4",
+    "@capacitor/cli": "^8.3.4",
+    "@capacitor/core": "^8.3.4",
+    "@capacitor/haptics": "^8.0.2",
+    "@capacitor/ios": "^8.3.4",
+    "@capacitor/splash-screen": "^8.0.1",
+    "@capacitor/status-bar": "^8.0.2",
+    "tone": "^15.1.22"
+  },
+  "devDependencies": {
+    "vite": "^6.0.3"
+  }
+}

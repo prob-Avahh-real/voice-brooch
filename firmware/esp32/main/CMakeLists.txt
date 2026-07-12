@@ -1,0 +1,19 @@
+# NimBLE GATT server for Voice Brooch
+idf_component_register(
+    SRCS
+        "main.c"
+        "board_esp32.c"
+        "ble_gatt.c"
+        "../shared/vb_protocol.c"
+        "../shared/vb_button.c"
+        "../shared/vb_app.c"
+    INCLUDE_DIRS
+        "."
+        "../shared"
+    REQUIRES
+        nvs_flash
+        bt
+        esp_adc
+        driver
+        esp_timer
+)
