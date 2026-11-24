@@ -1,0 +1,13 @@
+identifier:
+  name: VoiceBrooch PCB v1
+  vendor: VoiceBrooch
+  model: nRF52840 Brooch
+board:
+  name: voice_brooch_nrf52840
+  vendor: voicebrooch
+  socs:
+    - name: nrf52840
+build:
+  settings:
+    board_root: .
+    DTC_OVERLAY_FILE: boards/voice_brooch.overlay

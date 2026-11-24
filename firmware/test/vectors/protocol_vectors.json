@@ -1,0 +1,39 @@
+{
+  "crc8_samples": [
+    { "data": [1, 1, 0], "crc": 126 },
+    { "data": [1, 5, 0], "crc": 42 },
+    { "data": [1, 1, 1, 5], "crc": 115 }
+  ],
+  "frames": [
+    {
+      "name": "request_status",
+      "cmd": 5,
+      "payload": [],
+      "hex": "42560105002a"
+    },
+    {
+      "name": "set_preset_5",
+      "cmd": 1,
+      "payload": [5],
+      "hex": "42560101010573"
+    },
+    {
+      "name": "set_live_on",
+      "cmd": 2,
+      "payload": [1],
+      "hex": "425601020101d2"
+    },
+    {
+      "name": "ping",
+      "cmd": 8,
+      "payload": [],
+      "hex": "4256010800c3"
+    },
+    {
+      "name": "status_event",
+      "cmd": 128,
+      "payload": [3, 1, 0, 85, 80, 0],
+      "hex": "4256018006030100555000fb"
+    }
+  ]
+}
